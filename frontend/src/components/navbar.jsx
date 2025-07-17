@@ -25,6 +25,9 @@ export default function navbar() {
       </li>
       <li><a>About</a>
       </li>
+      <li>
+        <a>Course</a>
+      </li>
       <li><a>Contact</a>
       </li>
     </>
