@@ -48,9 +48,7 @@ export default function FreeCompany() {
         <h1 className='font-bold text-xl pb-2'>Free Offered Courses</h1>
         <p>Every question you solve is a step closer to mastery.
              It's not about being perfect; it's about showing up and improving each day.
-              Even when a problem feels tough, remember that every bit of effort sharpens your thinking. 
-              Consistency and curiosity will take you further than talent alone—just keep going,
-          one question at a time.</p>
+             </p>
         </div>
     <div className="">
         <Slider {...settings}>
