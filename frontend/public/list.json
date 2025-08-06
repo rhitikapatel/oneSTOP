@@ -110,5 +110,118 @@
     ],
     "category": "free",
     "image": "data:image/png;base64,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"
+  },
+
+  {
+    "id": 102,
+    "name": "VMware",
+    "description": "VMware focuses on distributed systems and low-level problem-solving.",
+    "questions": [
+      "Find the number of islands in a 2D matrix.",
+      "LRU cache design.",
+      "Median of two sorted arrays.",
+      "Implement trie (prefix tree).",
+      "Job scheduling with deadlines"
+    ],
+    "category": "paid",
+    "image": "/images/vmware.png"
+  },
+  {
+    "id": 104,
+    "name": "Salesforce",
+    "description": "Salesforce looks for strong problem-solving and design thinking.",
+    "questions": [
+      "Longest substring without repeating characters.",
+      "Implement a min stack.",
+      "Search in a rotated sorted array.",
+      "Flatten nested list iterator.",
+      "Design autocomplete system"
+    ],
+    "category": "paid",
+    "image": "/images/salesforce.png"
+  },
+  {
+    "id": 105,
+    "name": "Oracle",
+    "description": "Oracle asks both DS/Algo and SQL-heavy problems in interviews.",
+    "questions": [
+      "Top K frequent elements.",
+      "Merge intervals.",
+      "Group anagrams.",
+      "SQL: Find second highest salary.",
+      "LRU Cache"
+    ],
+    "category": "paid",
+    "image": "/images/oracle.png"
+  },
+  {
+    "id": 106,
+    "name": "Intuit",
+    "description": "Focus on core algorithms and real-world problem design.",
+    "questions": [
+      "Product of array except self.",
+      "Binary tree right side view.",
+      "Add two numbers in linked list.",
+      "Merge two sorted arrays.",
+      "Find peak element"
+    ],
+    "category": "paid",
+    "image": "/images/intuit.png"
+  },
+  {
+    "id": 107,
+    "name": "Twitter",
+    "description": "Known for questions around real-time systems and scalability.",
+    "questions": [
+      "Design Twitter clone.",
+      "Sliding window maximum.",
+      "Find K closest points to origin.",
+      "Binary search variations.",
+      "Max sum of non-adjacent elements"
+    ],
+    "category": "paid",
+    "image": "/images/twitter.png"
+  },
+  {
+    "id": 108,
+    "name": "Netflix",
+    "description": "Netflix values clean code and performance optimization.",
+    "questions": [
+      "Top K frequent words.",
+      "Longest consecutive sequence.",
+      "Design a video streaming buffer.",
+      "Implement a blocking queue.",
+      "Word break problem"
+    ],
+    "category": "paid",
+    "image": "/images/netflix.png"
+  },
+  {
+    "id": 109,
+    "name": "Dropbox",
+    "description": "Dropbox emphasizes memory optimization and file system logic.",
+    "questions": [
+      "Design file system.",
+      "LRU Cache design.",
+      "Find duplicate files in a system.",
+      "Maximum width of binary tree.",
+      "Clone binary tree with random pointer"
+    ],
+    "category": "paid",
+    "image": "/images/dropbox.png"
+  },
+  {
+    "id": 110,
+    "name": "Qualcomm",
+    "description": "Qualcomm asks bit manipulation, DP, and C/C++ specific logic questions.",
+    "questions": [
+      "Count set bits.",
+      "Find XOR of numbers in range.",
+      "Knapsack problem.",
+      "Palindrome partitioning.",
+      "Implement malloc/free"
+    ],
+    "category": "paid",
+    "image": "/images/qualcomm.png"
   }
 ]
