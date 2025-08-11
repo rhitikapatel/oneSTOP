@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 import Footer from './Footer';
 
 function Technews() {
@@ -32,7 +32,7 @@ function Technews() {
       <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 py-8">
         {/* Heading */}
         <div className="mb-6 text-center">
-          <h2 className="font-bold text-3xl pb-2 text-pink-500 inline-block px-4 py-9 rounded-md">
+          <h2 className="font-bold text-3xl pb-2 text-blue-500 inline-block px-4 py-9 rounded-md">
             Latest Tech News
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto mt-2">
@@ -46,7 +46,7 @@ function Technews() {
           {articles.map((article, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-5 flex flex-col justify-between"
+              className="bg-blue-300 border border-gray-200 rounded-2xl shadow-md hover:shadow-lg transition duration-300 p-5 flex flex-col justify-between"
             >
               <a
                 href={article.url}
@@ -70,7 +70,7 @@ function Technews() {
         {/* Back Button in the Middle */}
         <div className="text-center my-12">
           <Link to="/">
-            <button className="bg-pink-500 text-white px-6 py-3 rounded-md hover:bg-pink-700 transition duration-300 text-lg font-semibold shadow-lg">
+            <button className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 text-lg font-semibold shadow-lg">
               Back to Home
             </button>
           </Link>

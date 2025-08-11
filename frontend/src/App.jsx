@@ -4,6 +4,7 @@ import Courses from './courses/courses'
 import Signup from './components/signup'
 import Contact from './components/contact'
 import Technews from './components/technews'
+import QuestionsPage from './components/QuestionsPage'
 import { Route, Routes } from "react-router-dom"                
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/technews" element={<Technews/>}/>
+      <Route path="/questions/:companyId" element={<QuestionsPage/>}/>
   
     </Routes>
     </div>

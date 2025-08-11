@@ -1,6 +1,6 @@
  import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Navbar from './Navbar';
+import Navbar from './navbar';
 import Footer from './Footer';
 
 import { Link } from 'react-router-dom';
