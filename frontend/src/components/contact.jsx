@@ -19,7 +19,7 @@ function Contact() {
 
       {/* Heading */}
       <div className="text-center mt-8 relative">
-        <h1 className="text-3xl font-bold py-10 text-pink-500">Contact Us</h1>
+        <h1 className="text-3xl font-bold py-10 text-blue-500">Contact Us</h1>
       </div>
 
       {/* Form Section */}
@@ -69,7 +69,7 @@ function Contact() {
 
           {/* Submit Button */}
           <div className="mt-6">
-            <button className="w-full bg-pink-500 hover:bg-pink-700 text-white font-medium py-2 px-4 rounded-md transition duration-200">
+            <button className="w-full bg-blue-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition duration-200">
               Submit
             </button>
           </div>
@@ -77,7 +77,7 @@ function Contact() {
       </div>
       <div className="text-center my-12">
           <Link to="/">
-            <button className="bg-pink-500 text-white px-6 py-3 rounded-md hover:bg-pink-700 transition duration-300 text-lg font-semibold shadow-lg">
+            <button className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition duration-300 text-lg font-semibold shadow-lg">
               Back to Home
             </button>
           </Link>

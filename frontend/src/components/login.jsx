@@ -70,7 +70,7 @@ function Login() {
             <div className="flex justify-around items-center mt-4">
               <button
                 type="submit"
-                className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700 duration-200"
+                className="bg-blue-500 text-white rounded-md px-3 py-1 hover:bg-blue-700 duration-200"
               >
                 Login
               </button>

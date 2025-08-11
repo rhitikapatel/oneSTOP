@@ -25,7 +25,7 @@ export default function Course() {
       <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 '>
         <div className='mt-28 items-center justify-center text-center'>
           <h1 className='text-2xl md:text-4xl'>
-            <span className='text-pink-500'>Welcome, coder!</span> You’ve just unlocked the tools to write cleaner code, crack tougher problems, and think like an engineer.
+            <span className='text-blue-500'>Welcome, coder!</span> You’ve just unlocked the tools to write cleaner code, crack tougher problems, and think like an engineer.
           </h1>
           <p className=' mt-12'>
             Welcome to the next level of your coding journey!
@@ -36,7 +36,7 @@ export default function Course() {
             future. So gear up, stay curious, and let’s build something incredible — one line at a time.
           </p>
           <Link to="/">
-            <button className='mt-6 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300'>
+            <button className='mt-6 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700 duration-300'>
               Back
             </button>
           </Link>
