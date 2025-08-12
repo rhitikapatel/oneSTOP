@@ -1,7 +1,7 @@
 import React from "react";
 import Home from "./home/Home";
 import { Navigate, Route, Routes } from "react-router-dom";
-import Courses from "./courses/Courses";
+import Courses from "./courses/courses";
 import Signup from "./components/signup";
 import { Toaster } from "react-hot-toast";
 import { useAuth } from "./context/AuthProvider";
@@ -23,10 +23,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/technews" element={<TechNews />} />
-        <Route
-            path="/company/:companyId"
-            element={<QuestionsPage />}
-          />
+          <Route path="/questions/:companyId" element={<QuestionsPage/>}/>
         </Routes>
         <Toaster />
       </div>

@@ -2,26 +2,26 @@ import Company from "../model/company.model.js";
 
 export const getCompany = async (req, res) => {
   try {
-    const companies = await Company.find();
-    res.status(200).json(companies);
+    const company = await Company.find();
+    res.status(200).json(company); // ✅ fixed status
   } catch (err) {
-    console.error("Error:", err);
-    res.status(500).json({ message: "Internal server error" });
+    console.log("Error:", err);     // ✅ fixed error reference
+    res.status(500).json(err);
   }
 };
 
 export const getCompanyById = async (req, res) => {
   try {
     const { id } = req.params;
-    const company = await Company.findById(id);
-
-    if (!company) {
+    const companyId = await Company.findOne({ id: id });
+    
+    if (!companyId) {
       return res.status(404).json({ message: "Company not found" });
     }
-
-    res.status(200).json(company);
+    
+    res.status(200).json(companyId);
   } catch (err) {
-    console.error("Error:", err);
-    res.status(500).json({ message: "Internal server error" });
+    console.log("Error:", err);
+    res.status(500).json(err);
   }
 };

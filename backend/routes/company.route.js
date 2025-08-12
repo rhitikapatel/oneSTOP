@@ -8,4 +8,3 @@ router.get("/:id",getCompanyById);
 
 
 export default router;
-
