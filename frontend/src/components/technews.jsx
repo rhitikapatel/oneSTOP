@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from './navbar';
-import Footer from './Footer';
+import Footer from './footer';
 
 function Technews() {
   const [articles, setArticles] = useState([]);
