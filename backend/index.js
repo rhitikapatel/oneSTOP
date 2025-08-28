@@ -1,36 +1,53 @@
 import express from "express";
 import mongoose from "mongoose";
-import dotenv from "dotenv";
-import CompanyRoute from "./routes/company.route.js";
 import cors from "cors";
+import dotenv from "dotenv";
+
+import CompanyRoute from "./routes/company.route.js";
 import userRoute from "./routes/user.route.js";
 
+// ✅ Load environment variables
 dotenv.config();
 
 const app = express();
-app.use(cors());
+
+// ✅ Middleware
 app.use(express.json());
+app.use(
+  cors({
+    origin: [
+      "https://versel-frontend-two.vercel.app" // your deployed frontend
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
-const PORT = process.env.PORT || 4000;
-const URI = process.env.MongoDBURI;
+// ✅ MongoDB connection (runs once per cold start in Vercel serverless)
+if (mongoose.connection.readyState === 0) {
+  console.log(
+    "Checking MongoDB URI:",
+    process.env.MONGODB_URI ? "Loaded ✅" : "Missing ❌"
+  );
 
-async function startServer() {
-  try {
-    await mongoose.connect(URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-    console.log("connected to mongoose");
-
-    app.use("/company", CompanyRoute);
-    app.use("/user", userRoute);
-
-    app.listen(PORT, () => {
-      console.log(`Example app listening on port ${PORT}`);
-    });
-  } catch (error) {
-    console.log("Error:", error);
-  }
+  mongoose
+    .connect(process.env.MONGODB_URI) // removed deprecated options
+    .then(() => console.log("✅ MongoDB connected"))
+    .catch((err) => console.error("❌ MongoDB connection error:", err));
 }
 
-startServer();
+// ✅ Routes
+app.use("/api/company", CompanyRoute);
+app.use("/api/user", userRoute);
+
+// ✅ Root test routes
+app.get("/", (req, res) => {
+  res.send("Backend root is live 🚀. Use /api for routes.");
+});
+
+app.get("/api", (req, res) => {
+  res.json({ message: "Backend running on Vercel 🚀" });
+});
+
+// ✅ Export app (Vercel will use this)
+export default app;
