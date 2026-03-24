@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "689ad0d895d0994b8ad70108"
+  },
+  "fullname": "rhiti",
+  "email": "rhitikajuli@gmail.com",
+  "password": "$2b$10$qKNtBFKPCSEJ6ZWmWrRUQu9bW5K0ew02NBZOWPOJ1tafiMLf5W.jK",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "689af26cc8edf7f219e187bc"
+  },
+  "fullname": "om",
+  "email": "om@gmail.com",
+  "password": "$2b$10$4EQrENdudvJS6hFuOv0/Ce5bUnQl47OTF/zkryDbrkE74bau/bdeu",
+  "__v": 0
+}]
